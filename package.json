@@ -1,11 +1,12 @@
 {
   "name": "jquery-html5-validity",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "mikemaccana/jquery-html5-validity",
   "keywords": ["jquery", "form", "validation"],
   "author": "Mike MacCana <mike.maccana@gmail.com>",
   "license": "MIT"
