@@ -1,6 +1,6 @@
 {
   "name": "jquery-html5-validity",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,5 @@
   },
   "keywords": ["jquery", "form", "validation"],
   "author": "Mike MacCana <mike.maccana@gmail.com>",
-  "license": "ISC"
+  "license": "MIT"
 }

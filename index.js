@@ -1,8 +1,10 @@
 module.exports = function(jQuery){
 
+  var log = console.log.bind(console);
+
   // Check whether all the items in a selection are valid
   jQuery.fn.isValid = function(){
-    var isValid = false;
+    var isValid = true;
     this.each(function(index, element){
       if ( element.checkValidity ) {
         if ( ! element.checkValidity() ) {
@@ -10,7 +12,7 @@ module.exports = function(jQuery){
         }
       }
     })
-    return
+    return isValid
   }
 
   jQuery.fn.setCustomValidity = function(reason){
@@ -18,7 +20,11 @@ module.exports = function(jQuery){
     if ( ! reason ) {
       reason = ''
     }
-    return this[0].setCustomValidity(reason)
+    this.each(function(index, element){
+      if ( element.setCustomValidity ) {
+        element.setCustomValidity(reason)
+      }
+    })
   }
 
 
